@@ -64,7 +64,7 @@ public class LastNumberOfCircle {
     }
 
     /**
-     *
+     * 数学解法
      * @param n
      * @param m
      * @return
