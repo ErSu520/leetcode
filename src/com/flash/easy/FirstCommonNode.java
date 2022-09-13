@@ -36,7 +36,7 @@ public class FirstCommonNode {
             headA = headA.next;
         }
         while (headB != null){
-            if(headA.value == headB.value){
+            if(headA.val == headB.val){
                 return headA;
             }
             headA = headA.next;
@@ -57,7 +57,7 @@ public class FirstCommonNode {
         ListNode A = headA;
         ListNode B = headB;
 
-        while (A.value != B.value){
+        while (A.val != B.val){
             System.out.println(2);
             A = A.next != null ? A.next : headB;
             B = B.next != null ? B.next : headA;
@@ -70,7 +70,7 @@ public class FirstCommonNode {
         ListNode headB = ListNode.createListWithoutHeader(new int[]{5, 0, 1, 8, 4, 5});
 
         ListNode result = solution1(headA, headB);
-        System.out.println(result != null ? result.value : null);
+        System.out.println(result != null ? result.val : null);
     }
 
 }

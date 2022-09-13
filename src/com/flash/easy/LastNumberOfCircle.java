@@ -3,7 +3,6 @@ package com.flash.easy;
 import com.flash.common.ListNode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -39,7 +38,7 @@ public class LastNumberOfCircle {
             }
             head.next = head.next.next;
         }
-        return head.value;
+        return head.val;
     }
 
     /**

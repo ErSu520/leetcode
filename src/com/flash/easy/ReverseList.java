@@ -25,7 +25,7 @@ public class ReverseList {
         ListNode reverseHead = solution(head);
 
         while (reverseHead != null){
-            System.out.print(reverseHead.value);
+            System.out.print(reverseHead.val);
             System.out.print("  ");
             reverseHead = reverseHead.next;
         }
