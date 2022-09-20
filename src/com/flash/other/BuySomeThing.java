@@ -39,6 +39,18 @@ public class BuySomeThing {
         return dp[n-1][aim]==max?-1:dp[n-1][aim];
     }
 
+    /**
+     * Prices： 1， 3， 4，5
+     * Aim ：   8
+     *
+     * 规划表格 第一行为钱数
+     * 0	1	2	3	4	5	6	7	8	9
+     * 0	1	2	1	2	3	2	3	4
+     * 0
+     * 0
+     *
+     * @param args
+     */
     public static void main(String[] args){
         System.out.println(buyCount(new int[]{1, 5, 10, 20, 30, 50, 80}, 100));
     }
